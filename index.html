@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="home">
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Welcome to Class Activities</h1>
+    <button class="custom-btn" onclick="window.location.href='stocks.html'">Stocks</button>
+    <button class="custom-btn" onclick="window.location.href='dogs.html'">Dogs</button>
+    <div id="quote"></div>
+  </main>
+
+  <div class="audio-controls">
+    <button id="audioOn">Turn On Audio</button>
+    <button id="audioOff">Turn Off Audio</button>
+  </div>
+
+  <div id="quote-container">
+    <p id="quote-text">Loading Quote...</p>
+    <p id="quote-author"></p>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
